@@ -16,7 +16,7 @@ if(!$result2){echo "1919810931114514表创建失败";}
 
 $str1="INSERT INTO words(id,data) VALUES(1,'Only red tea'); ";
 $str2="INSERT INTO words(id,data) VALUES(2,'I have a big planet');";
-$str3="INSERT INTO 1919810931114514(flag) VALUES('flag{qwb_sql_injection_test}');";
+$str3="INSERT INTO `1919810931114514`(flag) VALUES('flag{qwb_sql_injection_test}');";
 $res1=mysqli_query($conn,$str1);
 $res2=mysqli_query($conn,$str2);
 $res3=mysqli_query($conn,$str3);
