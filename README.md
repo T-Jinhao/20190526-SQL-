@@ -1,10 +1,8 @@
 #### 仿写强网杯的'随便注'
 
-先在`mysqli.php`内写好配置信息，然后在数据库中创建`supersqli`这个库
+先在`mysqli.php`内写好配置信息
 
-访问`create_mysqli.php`自动创建数据库信息
-
-访问`index.php`即可正常使用
+访问`index.php`即可使用
 
 
 
