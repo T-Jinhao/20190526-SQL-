@@ -6,14 +6,18 @@
 <body>
 <div>
 	<form action="" method="GET">
-		<input type="text" id="inject" name="inject" value="1" />
-		<button type="submit">提交</button>
+		<input type="text" id="inject"  name="inject" value="1" />
+		<input type="submit" value="查询"/>
+		<input type="submit" name="x" value="重置数据库"/>
 	</form>
 </div>
 
 
 <?php
+error_reporting(0);
 require("mysqli.php");
+if(isset($_GET['x'])){require('create_mysql.php');}
+
 if(isset($_GET['inject'])){
 $inject=$_GET['inject'];
 if (preg_match("/select|insert|update|drop|delete|where\./i", $inject)){
